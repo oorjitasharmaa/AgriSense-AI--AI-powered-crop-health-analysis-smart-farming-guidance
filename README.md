@@ -1,34 +1,79 @@
-# AgriSense AI – AI-powered Crop Health Analysis & Smart Farming Guidance
+# 🌿 AgriSense AI – AI-Powered Crop Health Analysis & Smart Farming Guidance
 
-AgriSense AI is an intelligent plant disease detection system that helps users identify crop leaf diseases from images using a lightweight deep learning model (MobileNet). The goal is fast and accessible diagnosis for smart farming.
+AgriSense AI is an intelligent plant disease detection system designed to assist farmers through fast, accurate, and accessible crop health diagnosis. The system integrates deep learning, computer vision, and an optional NLP-based advisory module to provide disease classification and smart farming guidance.
+
+The project leverages a lightweight CNN architecture (MobileNet) to enable efficient inference even on low-resource devices, making it suitable for real-world agricultural environments.
 
 ---
 
-## ✨ Key Features
-- 🌿 Leaf disease detection from uploaded images (PlantVillage dataset)
-- ⚡ Lightweight MobileNet architecture for faster inference on low-resource devices
-- 🧪 Preprocessing + training + evaluation pipeline (in notebook)
-- 📄 Includes research paper/report for full project explanation
+## 🚀 Key Features
+
+- 🌱 Leaf disease detection using deep learning
+- ⚡ MobileNet-based lightweight architecture
+- 🖼 Image preprocessing and augmentation pipeline
+- 📊 Model evaluation with performance metrics
+- 💬 (Optional) NLP-based advisory for farmer queries
+- 📈 Data visualization for better decision-making
 
 ---
 
 ## 🧠 Model & Approach
+
 - **Architecture:** MobileNet (lightweight CNN)
-- **Task:** Multi-class plant disease classification from leaf images
-- **Dataset:** PlantVillage (public dataset of healthy/diseased leaf images)
-- **Pipeline:** Data loading → preprocessing/augmentation → training → evaluation → prediction
+- **Dataset:** PlantVillage Dataset
+- **Task:** Multi-class crop disease classification
+- **Pipeline:**
+  - Image preprocessing (resizing, normalization, augmentation)
+  - Feature extraction using MobileNet
+  - Classification layer for disease prediction
+  - Model evaluation and prediction
+
+MobileNet was chosen over heavier architectures (VGG/ResNet) due to its reduced computational cost and faster inference time.
 
 ---
 
-## 📁 Repository Contents
-- `AgriSense - AI.ipynb` — full training + prediction workflow
-- `AgriSense AI research paper.pdf` — project report / documentation
-- `.gitignore` — ignores unnecessary files
+## 📊 Results
+
+- Validation Accuracy: XX%
+- Test Accuracy: XX%
+- Successfully classified multiple leaf diseases across different crop types.
+
+(Add actual accuracy values from your model)
+
+Example Prediction Output:
+
+![Prediction Output](assets/prediction.png)
 
 ---
 
-## 🚀 How to Run (Local)
-### 1) Clone the repo
-```bash
-git clone https://github.com/oorjitasharmaa/AgriSense-AI--AI-powered-crop-health-analysis-smart-farming-guidance.git
-cd AgriSense-AI--AI-powered-crop-health-analysis-smart-farming-guidance
+## ⚠️ Limitations
+
+- Dataset primarily contains clean, controlled images (PlantVillage).
+- Real-world farm images with complex backgrounds may reduce performance.
+- Limited number of crop types supported.
+- Web deployment may require stable internet connection.
+
+---
+
+## 🔮 Future Improvements
+
+- Integration with real-world field images
+- Offline mobile deployment (TensorFlow Lite)
+- Multilingual NLP-based farmer guidance
+- IoT sensor integration for smart farming insights
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- TensorFlow / Keras
+- NumPy
+- OpenCV
+- Matplotlib
+- Scikit-learn
+- (Optional) NLP Transformers
+
+---
+
+## 📁 Repository Structure
